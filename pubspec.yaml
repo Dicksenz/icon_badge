@@ -1,8 +1,8 @@
 name: icon_badge
-description: A new Flutter package project.
+description: A simple flutter icon widget with notfication badge to monitor number of items.
 version: 0.0.1
 author: Dicksen Veloopillay <dicksenrayden@gmail.com>
-homepage:
+homepage: https://github.com/Dicksenz/icon_badge
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
