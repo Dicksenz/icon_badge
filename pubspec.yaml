@@ -1,6 +1,6 @@
 name: icon_badge
-description: A simple flutter icon widget with notfication badge to monitor number of items.
-version: 0.0.1
+description: A simple flutter icon widget with notification badge to show number of items.
+version: 0.0.1+4
 # author: Dicksen Veloopillay <dicksenrayden@gmail.com>
 homepage: https://github.com/Dicksenz/icon_badge
 

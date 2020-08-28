@@ -9,6 +9,7 @@ Usage:
             icon: Icon(Icons.notifications_none),
             itemCount: 0,
             badgeColor: Colors.red,
+            itemColor: Colors.white,
             hideZero: true,
             onTap: () {
               print('test');

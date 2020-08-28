@@ -8,6 +8,7 @@ class IconBadge extends StatelessWidget {
   final int itemCount;
   final bool hideZero;
   final Color badgeColor;
+  final Color itemColor;
   final double top;
   final double right;
 
@@ -17,7 +18,8 @@ class IconBadge extends StatelessWidget {
     @required this.icon,
     this.itemCount = 0,
     this.hideZero = false,
-    this.badgeColor,
+    this.badgeColor = Colors.red,
+    this.itemColor = Colors.white,
     this.top = 5.0,
     this.right = 6.0,
   }) : super(key: key);
@@ -65,7 +67,12 @@ class IconBadge extends StatelessWidget {
                       decoration: BoxDecoration(
                           shape: BoxShape.circle, color: badgeColor),
                       alignment: Alignment.center,
-                      child: Text('$itemCount'),
+                      child: Text(
+                        '$itemCount',
+                        style: TextStyle(
+                          color: itemColor,
+                        ),
+                      ),
                     ),
                   )
                 ],
