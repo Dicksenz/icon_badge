@@ -22,7 +22,7 @@ class TestApp extends StatelessWidget {
         actions: <Widget>[
           IconBadge(
             icon: Icon(Icons.notifications_none),
-            itemCount: 0,
+            itemCount: 100,
             badgeColor: Colors.red,
             itemColor: Colors.white,
             hideZero: true,

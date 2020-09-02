@@ -11,6 +11,7 @@ class IconBadge extends StatelessWidget {
   final Color itemColor;
   final double top;
   final double right;
+  final int maxCount;
 
   const IconBadge({
     Key key,
@@ -20,7 +21,8 @@ class IconBadge extends StatelessWidget {
     this.hideZero = false,
     this.badgeColor = Colors.red,
     this.itemColor = Colors.white,
-    this.top = 5.0,
+    this.maxCount = 99,
+    this.top = 3.0,
     this.right = 6.0,
   }) : super(key: key);
 
@@ -65,14 +67,23 @@ class IconBadge extends StatelessWidget {
                     child: Container(
                       padding: EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                       decoration: BoxDecoration(
-                          shape: BoxShape.circle, color: badgeColor),
-                      alignment: Alignment.center,
-                      child: Text(
-                        '$itemCount',
-                        style: TextStyle(
-                          color: itemColor,
-                        ),
+                        borderRadius: BorderRadius.circular(50.0),
+                        color: badgeColor,
                       ),
+                      alignment: Alignment.center,
+                      child: itemCount > maxCount
+                          ? Text(
+                              '$maxCount+',
+                              style: TextStyle(
+                                color: itemColor,
+                              ),
+                            )
+                          : Text(
+                              '$itemCount',
+                              style: TextStyle(
+                                color: itemColor,
+                              ),
+                            ),
                     ),
                   )
                 ],
