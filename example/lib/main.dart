@@ -25,6 +25,7 @@ class TestApp extends StatelessWidget {
             itemCount: 100,
             badgeColor: Colors.red,
             itemColor: Colors.white,
+            maxCount: 99,
             hideZero: true,
             onTap: () {
               print('test');

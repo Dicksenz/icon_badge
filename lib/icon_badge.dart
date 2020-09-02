@@ -76,12 +76,14 @@ class IconBadge extends StatelessWidget {
                               '$maxCount+',
                               style: TextStyle(
                                 color: itemColor,
+                                fontSize: 12.0,
                               ),
                             )
                           : Text(
                               '$itemCount',
                               style: TextStyle(
                                 color: itemColor,
+                                fontSize: 12.0,
                               ),
                             ),
                     ),
