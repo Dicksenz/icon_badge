@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class IconBadge extends StatelessWidget {
   final Icon icon;
-  final VoidCallback onTap;
+  final VoidCallback? onTap;
   final int itemCount;
   final bool hideZero;
   final Color badgeColor;
@@ -14,9 +14,9 @@ class IconBadge extends StatelessWidget {
   final int maxCount;
 
   const IconBadge({
-    Key key,
+    Key? key,
     this.onTap,
-    @required this.icon,
+    required this.icon,
     this.itemCount = 0,
     this.hideZero = false,
     this.badgeColor = Colors.red,

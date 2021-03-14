@@ -29,7 +29,7 @@ dev_dependencies:
     sdk: flutter
 
   icon_badge:
-    path: /Users/dicksen.veloopillay/Desktop/icon_badge
+    path: /Users/dicksen.veloopillay/flutter-projects/icon_badge
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
